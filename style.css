@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.01em;
+    color: #2d3748;
+}
+
+.custom-bg {
+    background-color: #d6e6f2 !important;
+}
+
+.hero-banner {
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80') center/cover;
+    min-height: 320px;
+}
+
+.rounded-4 {
+    border-radius: 1rem !important;
+}
+
+.custom-brand {
+    color: #086fb8 !important;
+}
+
+.custom-brand:hover {
+    color: #086fb8  !important;
+}
+.nav-action-btn {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4a5568;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.nav-action-btn:hover {
+    color: #ffffff !important;
+    background-color: #086fb8 !important;
+    border: 1px solid #086fb8!important;
+    transition: all 0.2s ease;
+}
+.custom-search-btn {
+    color: #086fb8 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #086fb8!important;
+    transition: all 0.2s ease;
+}
+.custom-hero-btn {
+    color: #086fb8 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #086fb8!important;
+    transition: all 0.2s ease;
+}
+
+.custom-hero-btn:hover {
+    color: #ffffff !important;
+    background-color: #4f82d9 !important;
+}
+
+.custom-search-btn:hover {
+    background-color: #4f82d9!important;
+    color: #ffffff  !important;
+}
+.custom-discount-banner {
+    background-color: #6983c0 !important; 
+}
+
+.card-hover {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08) !important;
+}
+
+.img-zoom {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-hover:hover .img-zoom {
+    transform: scale(1.06);
+}
+
+.backdrop-blur {
+    background: rgba(15, 23, 42, 0.65) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.max-w-md {
+    max-width: 450px;
+}
+
+.start-5 {
+    left: 5% !important;
+}
+
+.table-hover tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8fafc;
+    cursor: pointer;
+}
+
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.facilities-section {
+    background-color: #6983c0;
+    padding: 60px 20px;
+    font-family: 'times', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.facilities-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.facilities-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.facilities-header h2 {
+    color: #eae6e1;
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.facility-card {
+    background-color: #f7f5f2;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.facility-icon svg {
+    width: 42px;
+    height: 42px;
+    color: #443e39;
+    margin-bottom: 15px;
+}
+
+.facility-card h3 {
+    color: #22201e;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.facility-card p {
+    color: #55514d;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+    .facilities-header h2 {
+        font-size: 1.75rem;
+    }
+}
